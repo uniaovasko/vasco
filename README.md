@@ -1,5 +1,7 @@
-# vasco
+# Equipe União Vasko
 
-Breno Nishimoto - 220599
-Gabriel Nascimento - 222103
-Mateus Andrade - 230806
+# Subgrupo A
+* Gabriel de Carvalho Silva Nascimento - 222103
+* Breno Shigeki Guimarães Nishimoto - 220599
+* Mateus da Costa e Silva Rios Alves de Andrade - 230806
+
