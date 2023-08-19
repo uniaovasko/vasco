@@ -7,7 +7,7 @@
 
 ## Modelo Conceitual ER
 
-<img src="lab02/images/ER_Restaurante.png" width="400px" height="auto">
+<img src="images/ER_Restaurante.png" width="400px" height="auto">
 
 # Modelo Conceitual UML
 
