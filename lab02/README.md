@@ -11,6 +11,4 @@
 
 # Modelo Conceitual UML
 
-> Coloque aqui o diagrama UML produzido pela sua equipe. O diagrama deve detalhar atributos e cardinalidade. Será valorizado o uso de herança, agregação e composição, quando pertinente.
-
-<img src="images/UML_Diagram_for_a_Online_Restaurant.png" width="400px" height="auto">
+<img src="images/UML_Restaurante.png" width="400px" height="auto">
