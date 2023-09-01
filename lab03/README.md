@@ -14,10 +14,30 @@ Diagrama ER Revisado
 # Mapeamento para o Modelo Relacional
 ~~~
 ALUNO(_RA_, Nome)
-BANDEJA(_RA_, _Data_, _Turno_, Porções)
-  Dono chave estrangeira -> ALUNO(RA)
+
+BANDEJA(_Aluno_, _Data_, _Turno_, Porções)
+  Aluno chave estrangeira -> ALUNO(RA)
+  Data chave estrangeira -> CARDÁPIO(Data)
+  Turno chave estrangeira -> CARDÁPIO(Turno)
+
+CARDÁPIO(_Data_, _Turno_)
+
 CAFÉ_DA MANHA(_Data_, _Turno_, Bebida, Cereal, Complemento)
+  Bebida chave estrangeira -> PORÇÃO(Nome)
+  Cereal chave estrangeira -> PORÇÃO(Nome)
+  COmplemento chave estrangeira -> PORÇÃO(Nome)
+
 REFEIÇÃO(_Data_, _Turno_, Bebida, Salada, Prato Principal Vegano, Prato Principal, Sobremesa Natural, Sobremesa Industrializada)
-PORÇÃO(_Código_, Informação Nutricional, É Vegano, Quantidade, Estatísticas de Consumo)
-INGREDIENTE(_Código_, Informação Nutricional, Ingredientes)
+  Bebida chave estrangeira -> PORÇÃO(Nome)
+  Salada chave estrangeira -> PORÇÃO(Nome)
+  Prato Principal Vegano chave estrangeira -> PORÇÃO(Nome)
+  Prato Principal chave estrangeira -> PORÇÃO(Nome)
+  Sobremesa industrializada chave estrangeira -> PORÇÃO(Nome)
+  Sobremesa natural chave estrangeira -> PORÇÃO(Nome)
+
+INGREDIENTE(_Código_, Nome, Informação Nutricional, Ingredientes)
+  Ingredientes chave estrangeira -> INGREDIENTE(Código)
+
+PORÇÃO(_Código_, Nome, Informação Nutricional, É Vegano, Quantidade, Estatísticas de Consumo, Ingredientes)
+  Ingredientes chave estrangeira -> INGREDIENTE(Código)
 ~~~
