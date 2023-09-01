@@ -20,15 +20,14 @@ BANDEJA(_Aluno_, _Data_, _Turno_, Porções)
   Data chave estrangeira -> CARDÁPIO(Data)
   Turno chave estrangeira -> CARDÁPIO(Turno)
 
-CARDÁPIO(_Data_, _Turno_)
+CARDÁPIO(_Data_, _Turno_, Bebida)
+  Bebida chave estrangeira -> Porção(Nome)
 
 CAFÉ_DA MANHA(_Data_, _Turno_, Bebida, Cereal, Complemento)
-  Bebida chave estrangeira -> PORÇÃO(Nome)
   Cereal chave estrangeira -> PORÇÃO(Nome)
-  COmplemento chave estrangeira -> PORÇÃO(Nome)
+  Complemento chave estrangeira -> PORÇÃO(Nome)
 
 REFEIÇÃO(_Data_, _Turno_, Bebida, Salada, Prato Principal Vegano, Prato Principal, Sobremesa Natural, Sobremesa Industrializada)
-  Bebida chave estrangeira -> PORÇÃO(Nome)
   Salada chave estrangeira -> PORÇÃO(Nome)
   Prato Principal Vegano chave estrangeira -> PORÇÃO(Nome)
   Prato Principal chave estrangeira -> PORÇÃO(Nome)
