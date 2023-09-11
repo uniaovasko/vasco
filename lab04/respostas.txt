@@ -12,9 +12,18 @@ SELECT Recipes.food_code, Recipes.fcid_code, Fcid_Description.fcid_desc, Recipes
 SELECT DISTINCT crop_group.crop_group_description
     FROM Recipes, Crop_Group, Fcid_Description
     WHERE Food_Code = 27111300 AND Mod_Code = 0 AND recipes.fcid_code = fcid_description.fcid_code AND crop_group.cgn = crop_group.cgl
-4 (NAO SEI SE TA CERTO)
-SELECT FCID_Description.FCID_Desc COUNT(Recipes.Food_Code) AS Numero
-    FROM FCID_Description, Recipes
-    WHERE FCID_Description.FCID_Code = Recipes.FCID_Code
-    GROUP BY FCID_Description.FCID_Desc
-    ORDER BY Numero DESC;
+4 
+SELECT FD.FCID_Desc, COUNT(R.Food_Code) AS Numero_De_Receitas
+FROM FCID_Description FD, Recipes R
+WHERE FD.FCID_Code = R.FCID_Code
+GROUP BY FD.FCID_Desc
+ORDER BY Numero_De_Receitas DESC;
+5
+SELECT
+    CG.CGN,
+    CG.Crop_Group_Description,
+    AVG(I.Intake) AS Consumo_Medio
+FROM Crop_Group CG, FCID_Description FD, Intake I
+WHERE CG.CGL = FD.CGN AND FD.FCID_Code = I.FCID_Code
+GROUP BY CG.CGN, CG.Crop_Group_Description
+ORDER BY CG.CGN
