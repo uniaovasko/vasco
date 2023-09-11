@@ -1,0 +1,20 @@
+1
+SELECT food_code, fcid_code, ingredient_num, commodity_weight
+    FROM Recipes
+    WHERE Food_Code = 27111300 AND Mod_Code = 0
+
+2
+SELECT Recipes.food_code, Recipes.fcid_code, Fcid_Description.fcid_desc, Recipes.ingredient_num, Recipes.commodity_weight
+    FROM Recipes, Fcid_Description
+    WHERE Food_Code = 27111300 AND Mod_Code = 0 AND recipes.fcid_code = fcid_description.fcid_code
+    ORDER BY ingredient_num
+3
+SELECT DISTINCT crop_group.crop_group_description
+    FROM Recipes, Crop_Group, Fcid_Description
+    WHERE Food_Code = 27111300 AND Mod_Code = 0 AND recipes.fcid_code = fcid_description.fcid_code AND crop_group.cgn = crop_group.cgl
+4 (NAO SEI SE TA CERTO)
+SELECT FCID_Description.FCID_Desc COUNT(Recipes.Food_Code) AS Numero
+    FROM FCID_Description, Recipes
+    WHERE FCID_Description.FCID_Code = Recipes.FCID_Code
+    GROUP BY FCID_Description.FCID_Desc
+    ORDER BY Numero DESC;
