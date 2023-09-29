@@ -1,2 +1,0 @@
-SELECT fcid_code, SUM(intake) AS intake_sum, AVG(intake) AS intake_avg, AVG(intake_bw) AS intake_avg_bw, COUNT(*)
-FROM intake GROUP BY FCID_CODE;
