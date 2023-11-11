@@ -1,7 +1,7 @@
 
 ## Modelo Logico Preliminar de Grafo
 
-<img src="lab07\extras\grafo.png" width="400px" height="auto">
+<img src="extras\grafo.png" width="400px" height="auto">
 
 ## Análises
 ~~~
