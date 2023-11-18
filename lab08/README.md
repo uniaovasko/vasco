@@ -2,7 +2,7 @@
 ## Propostas de Mapeamento e Transformações
 ~~~
 1. Criação de um mapeamento em que ingredientes se ligam a ingrediente por participação em receitas
-2. Desenvolvimento de um mapeamento em que os ingredientes se liguem por pertencerem a um grupo
+2. Criação de uma rede similar à dos ingredientes, relacionando receitas através de uma projeção nas pessoas que as consomem
 ~~~
 
 ## Análises
@@ -21,4 +21,10 @@ alguma relação que promove uma harmonização entre os sabores.
 -> Nesse caso a técnica de Centralidade, em específico a de Betweenness, conseguimos identificar a distância entre ingredientes.
 A conclusão esperada é a presença de componentes químicos antagonistas, como açúcar e sal, ou então a própria disponibilidade regional
 como a distância entre alga japonesa e o dendê.
+
+4. Comunidades de receitas
+-> Analisando as comunidades que podem vir a se formar na rede de receitas, podemos identificar receitas que costumam ser apreciadas pelas mesmas pessoas. Ademais, utilizando essa rede e aplicando técnicas de link prediction, podemos desenvolver um algoritmo que, baseado no gosto de uma pessoa, sugira receitas que ela provavelmente irá apreciar
+
+5. Receitas Ecléticas
+-> Podemos também encontrar receitas consideradas hubs e identificá-las como "coringas". Receitas que unem varios gostos diferentes podem se provar ótimas maneiras de garantir que ninguém será deixado de fora na montagem de cardápios para servir grandes números de pessoas, como por exemplo num refeitório estudantil
 ~~~
