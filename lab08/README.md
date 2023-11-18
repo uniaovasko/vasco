@@ -6,7 +6,6 @@
 ~~~
 
 ## Análises
-~~~
 1. Ingredientes que costumam aparecer juntos: o que clusters significam? Sabores parecidos?
 -> Por meio da técnica de predição de links (Link Prediction), podemos identificar semelhanças entre nós. Uma resposta
 plausível a ser encontrada é a presença de componentes químicos entre os ingredientes que os tornam complementares ou então
@@ -22,9 +21,8 @@ alguma relação que promove uma harmonização entre os sabores.
 A conclusão esperada é a presença de componentes químicos antagonistas, como açúcar e sal, ou então a própria disponibilidade regional
 como a distância entre alga japonesa e o dendê.
 
-4. Comunidades de receitas
+4. Comunidades de receitas.
 -> Analisando as comunidades que podem vir a se formar na rede de receitas, podemos identificar receitas que costumam ser apreciadas pelas mesmas pessoas. Ademais, utilizando essa rede e aplicando técnicas de link prediction, podemos desenvolver um algoritmo que, baseado no gosto de uma pessoa, sugira receitas que ela provavelmente irá apreciar
 
-5. Receitas Ecléticas
+5. Receitas Ecléticas.
 -> Podemos também encontrar receitas consideradas hubs e identificá-las como "coringas". Receitas que unem varios gostos diferentes podem se provar ótimas maneiras de garantir que ninguém será deixado de fora na montagem de cardápios para servir grandes números de pessoas, como por exemplo num refeitório estudantil
-~~~
