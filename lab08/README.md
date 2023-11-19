@@ -20,14 +20,12 @@ alguma relação que promove uma harmonização entre os sabores.
 
 3. Distância grande entre entre dois ingredientes implica em baixa compatibilidade/disponibilidade na mesma região?
 
--> Nesse caso a técnica de Centralidade, em específico a de Betweenness, conseguimos identificar a distância entre ingredientes.
-A conclusão esperada é a presença de componentes químicos antagonistas, como açúcar e sal, ou então a própria disponibilidade regional
-como a distância entre alga japonesa e o dendê.
+-> A análise da distância entre dois ingredientes por meio da técnica de Centralidade, especialmente utilizando a medida de Betweenness, permite identificar a proximidade ou afastamento na presença de outros ingredientes em uma rede alimentar. Uma conclusão esperada é que uma grande distância entre ingredientes pode indicar baixa compatibilidade ou disponibilidade na mesma região.
+
+Essa abordagem é valiosa para compreender não apenas possíveis interações químicas entre os ingredientes, mas também para considerar fatores geográficos e culturais. Por exemplo, a distância entre ingredientes como alga japonesa e dendê pode refletir não apenas diferenças de sabor, mas também as preferências culinárias regionais, indicando a disponibilidade local desses ingredientes.
+
+Dessa forma, a análise de Betweenness na rede alimentar proporciona uma visão mais abrangente da relação entre ingredientes, considerando tanto aspectos químicos quanto geográficos, contribuindo para uma compreensão mais rica da complexidade da culinária e das interações alimentares.
 
 4. Comunidades de receitas.
 
 -> Analisando as comunidades que podem vir a se formar na rede de receitas, podemos identificar receitas que costumam ser apreciadas pelas mesmas pessoas. Ademais, utilizando essa rede e aplicando técnicas de link prediction, podemos desenvolver um algoritmo que, baseado no gosto de uma pessoa, sugira receitas que ela provavelmente irá apreciar
-
-5. Receitas Ecléticas.
-
--> Podemos também encontrar receitas consideradas hubs e identificá-las como "coringas". Receitas que unem varios gostos diferentes podem se provar ótimas maneiras de garantir que ninguém será deixado de fora na montagem de cardápios para servir grandes números de pessoas, como por exemplo num refeitório estudantil
