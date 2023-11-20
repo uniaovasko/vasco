@@ -49,9 +49,7 @@ alguma relação que promove uma harmonização entre os sabores.
 > * 3. Distância grande entre entre dois ingredientes implica em baixa compatibilidade/disponibilidade na mesma região?
 >   
 >   * -> A análise da distância entre dois ingredientes por meio da técnica de Centralidade, especialmente utilizando a medida de Betweenness, permite identificar a proximidade ou afastamento na presença de outros ingredientes em uma rede alimentar. Uma conclusão esperada é que uma grande distância entre ingredientes pode indicar baixa compatibilidade ou disponibilidade na mesma região.
-
 Essa abordagem é valiosa para compreender não apenas possíveis interações químicas entre os ingredientes, mas também para considerar fatores geográficos e culturais. Por exemplo, a distância entre ingredientes como alga japonesa e dendê pode refletir não apenas diferenças de sabor, mas também as preferências culinárias regionais, indicando a disponibilidade local desses ingredientes.
-
 Dessa forma, a análise de Betweenness na rede alimentar proporciona uma visão mais abrangente da relação entre ingredientes, considerando tanto aspectos químicos quanto geográficos, contribuindo para uma compreensão mais rica da complexidade da culinária e das interações alimentares.
 
 ### Pergunta/Análise 4
